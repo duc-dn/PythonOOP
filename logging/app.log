@@ -1,0 +1,6 @@
+2022-10-22 21:02:00,294 DEBUG Harmless debug Message
+2022-10-22 21:02:00,294 INFO Just an information
+2022-10-22 21:02:00,294 WARNING Its a Warning
+2022-10-22 21:02:00,294 ERROR Did you try to divide by zero
+2022-10-22 21:02:00,294 CRITICAL Internet is down
+

@@ -1,5 +1,7 @@
 class Dog:
     # class attribute: các thuộc tính chung của 1 lớp (có thể hiểu là những cái chung)
+    # hay còn gọi là class varriable (một biến dùng chung cho tất cả các đối tượng thuộc class đó)
+    # nó không gắn với bất kỳ đối tượng nào mà chi gắn với lớp đó
     attr1 = "mamal"
 
     # instance class methods
