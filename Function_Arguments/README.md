@@ -59,7 +59,7 @@ và với các tham số còn lại chúng ta sẽ dùng `*args`
 ### kwargs
 - Cách sử dụng **kwargs cũng tương tự như như *args, tuy nhiên, nó không dùng cho các tham số thông thường truyền vào lần lượt, mà nó được sử dụng cho các tham số đặt tên 
 (thuật ngữ chính xác là named arguments hoặc keyword arguments).
-- VD:
+- VD1:
 ```commandline
 >>> def foo(**kwargs):
 ...     for key, value in kwargs.items():
@@ -68,6 +68,24 @@ và với các tham số còn lại chúng ta sẽ dùng `*args`
 >>> foo(a=1, b=2)
 a 1
 b 2
+```
+- VD2:
+```
+def test(*args, **kwargs):
+    for i in args:
+        print(i, end="\n")
+    for key, val in kwargs.items():
+        print(f"key: {key}, val: {val}")
+
+test(1,2,3,4,5,a="Duc",b=1)
+result:
+1
+2
+3
+4
+5
+key: a, val: Duc
+key: b, val: 1
 ```
 ***
 ## Unpack (giải nén)
